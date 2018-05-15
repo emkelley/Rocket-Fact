@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Roboto+Condensed:300|Roboto:200');
+
+
+
+html {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(193, 93, 62);
+  background: linear-gradient(0deg, rgba(193, 93, 62, 1) 0%, rgb(221, 111, 78) 100%);
+}
+input {
+  box-shadow: none!important;
+}
+header {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+
+
+
+.columns {
+  border-radius: 7px;
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.column-group {
+  height: 800px;
+  padding: 0;
+}
+
+
+
+
+
+
+.left {
+  background: rgb(62, 193, 182);
+  background: linear-gradient(0deg, rgba(62, 193, 182, 1) 0%, rgba(98, 227, 204, 1) 100%);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  box-shadow: inset -8px 0 20px -6px rgba(0, 0, 0, 0.35);
+  .column-header {
+    height: 75px;
+    .fa-rocket {
+      color: white;
+      font-size: 38px;
+      margin: 21px 0 21px 21px;
+    }
+  }
+  .column-content {
+    .title {
+      font-family: 'Quicksand', sans-serif;
+      padding: 75px 50px 0 50px;
+      text-align: center;
+      font-size: 1.7rem;
+      color: white;
+      span {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+.right {
+  background: rgb(32, 45, 61);
+  background: linear-gradient(0deg, rgba(32, 45, 61, 1) 0%, rgba(56, 75, 99, 1) 100%);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  cursor: pointer;
+  .column-header {
+    height: 50px;
+    color: lightblue;
+    float: right;
+    a {
+      color: lightblue;
+    }
+    .up-in-toggle {
+      float: right;
+      margin: 5px 20px 0 0;
+      display: flex;
+      input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+        &:checked+label {
+          background: rgb(62, 193, 182);
+          background: linear-gradient(0deg, rgba(62, 193, 182, 1) 0%, rgba(98, 227, 204, 1) 100%);
+          color: white;
+          font-weight: 500;
+          box-shadow: 0 7px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+        }
+      }
+      label {
+        display: inline-block;
+        width: 60px;
+        background-color: rgb(73, 90, 111);
+        color: rgb(165, 173, 183);
+        text-align: center;
+        font-size: .8rem;
+        padding: 6px 6px;
+        transition: all 0.2s ease-in-out;
+        :hover {
+          cursor: pointer;
+        }
+      }
+    }
+    .up-in-toggle label:first-of-type {
+      border-radius: 15.5px 0 0 15.5px;
+    }
+    .up-in-toggle label:last-of-type {
+      border-radius: 0 15.5px 15.5px 0;
+    }
+    .sign-in {
+      margin-right: 0;
+    }
+    .sign-up {
+      margin-left: 0;
+    }
+  }
+  .column-content {
+    height: 680px;
+    .title {
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 300;
+      padding: 200px 50px 0px 50px;
+      color: white;
+      font-size: 28px;
+      cursor: pointer;
+    }
+    #rocketFact {
+      color: white;
+      padding: 100px 70px;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+  }
+}
+
+
+
+
