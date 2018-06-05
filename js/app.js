@@ -56,9 +56,9 @@
 	    $('#hitMe').click(function (evt) {
 	        var quote = $('#rocketFact p').text();
 	        evt.preventDefault();
-	        var sourceLength = quoteBank.length;
-	        var randomNumber = Math.floor(Math.random() * sourceLength);
-	        for (i = 0; i <= sourceLength; i += 1) {
+	        var sourceBankLength = quoteBank.length;
+	        var randomNumber = Math.floor(Math.random() * sourceBankLength);
+	        for (i = 0; i <= sourceBankLength; i += 1) {
 	            var newRocketFact = quoteBank[randomNumber].quote;
 	            var timeAnimation = 250;
 	            var rocketFact = $('#rocketFact');
